@@ -1,0 +1,13 @@
+[include]
+	path = ~/.gitconfig.local
+[alias]
+	a = add
+	b = branch
+	c = commit
+	d = diff  
+	i = init  
+	l = log   
+	co = checkout
+	st = status
+	pl = pull
+	ps = push

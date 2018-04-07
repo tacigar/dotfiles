@@ -1,0 +1,37 @@
+#!/usr/bin/env zsh
+
+cd "$(dirname $0)"
+DOTFILES_ROOT=$(pwd)
+
+function setup_gitconfig() {
+  local git_username
+  local git_email
+  if ! [ -f git/gitconfig.local.symlink ]; then
+    printf "Setup gitconfig\n"
+    
+    printf "- What is your git user name:\n"
+    read git_username
+    printf "- What is your git email:\n"
+    read git_email
+
+    sed -e "s/GIT_USERNAME/$git_username/g" -e "s/GIT_EMAIL/$git_email/g" git/gitconfig.local.skeleton > git/gitconfig.local.symlink
+    printf "ginconfig success.\n"
+  fi
+}
+
+function install_dotfiles() {
+  for src_file in $(find -H $DOTFILES_ROOT -maxdepth 2 -name '*.symlink' -not -path '*.git*'); do
+    dst_file="$HOME/.$(basename ${src_file%.*})"
+    ln -f -s $src_file $dst_file
+  done
+}
+
+function execute_init_files() {
+  for src_file in $(find -H $DOTFILES_ROOT -maxdepth 2 -name 'init.zsh' -not -path '*.git*'); do
+    zsh $src_file
+  done
+}
+
+setup_gitconfig
+install_dotfiles
+execute_init_files

@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+alias g='git'
+alias e='emacs -nw'
+
+[[ -z "$TMUX" && ! -z "$PS1" ]] && exec tmux
