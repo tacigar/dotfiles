@@ -1,4 +1,6 @@
-#!/usr/bin/env zsh
+fpath=($HOME/.zsh/completion $fpath)
+autoload -U compinit
+compinit -u
 
 alias g='git'
 alias ga='git add'
