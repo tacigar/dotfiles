@@ -1,6 +1,14 @@
 #!/usr/bin/env zsh
 
 alias g='git'
+alias ga='git add'
+alias gb='git branch'
+alias gc='git commit'
+alias gs='git status'
+alias gco='git checkout'
+alias gpl='git pull'
+alias gps='git push'
+
 alias e='emacs -nw'
 
 [[ -z "$TMUX" && ! -z "$PS1" ]] && exec tmux
