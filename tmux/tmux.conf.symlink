@@ -2,3 +2,7 @@ set-option -g default-shell /bin/zsh
 set-option -g default-command /bin/zsh
 
 set -g prefix C-t
+
+bind c new-window -c '#{pane_current_path}'
+bind '"' split-window -c '#{pane_current_path}'
+bind % split-window -h -c '#{pane_current_path}'
