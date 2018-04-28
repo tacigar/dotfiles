@@ -11,3 +11,5 @@
 	st = status
 	pl = pull
 	ps = push
+[core]
+	editor = emacs
