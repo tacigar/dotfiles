@@ -33,3 +33,5 @@ PROMPT='%{$fg[green]%}[%n@%m]
 %{$fg[yellow]%}%D %*%{$fg[cyan]%} [%~] ${vcs_info_msg_0_}
 %{${reset_color}%}$ '
 RPROMPT=''
+
+[ -s ~/.luaver/luaver ] && . ~/.luaver/luaver
