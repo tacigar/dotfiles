@@ -13,3 +13,4 @@
 	ps = push
 [core]
 	editor = emacs
+	excludesfile = ~/.gitignore_global
