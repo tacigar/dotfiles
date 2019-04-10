@@ -2,7 +2,42 @@ fpath=($HOME/.zsh/completion $fpath)
 autoload -U compinit
 compinit -u
 
+#alias a=
+alias b='brew'
+alias c='cd'
+alias d='docker'
+alias e='emacs'
+alias f='fg'
 alias g='git'
+#alias h=
+#alias i=
+#alias j=
+alias k='kubectl'
+alias l='ls -aGF'
+alias m='make'
+alias n='npm'
+alias o='open'
+#alias p=
+#alias q=
+#alias r=
+alias s='ssh'
+#alias t=
+#alias u=
+alias v='emacs -nw'
+#alias w=
+#alias x=
+alias y='yarn'
+alias z='exec zsh -l'
+
+alias ls='ls -aGF'
+alias ll='clear && ls -alGF'
+alias ..='cd ..'
+alias ..2='cd ../..'
+alias ..3='cd ../../..'
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit'
@@ -13,8 +48,9 @@ alias gco='git checkout'
 alias gpl='git pull'
 alias gps='git push'
 
-alias e='emacs -nw'
-alias k='kubectl'
+alias v='emacs -nw'
+alias vi='emacs -nw'
+alias vim='emacs -nw'
 
 [[ -z "$TMUX" && ! -z "$PS1" ]] && exec tmux
 
