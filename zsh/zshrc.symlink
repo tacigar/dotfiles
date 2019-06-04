@@ -2,6 +2,10 @@ fpath=($HOME/.zsh/completion $fpath)
 autoload -U compinit
 compinit -u
 
+# Zsh History
+setopt hist_ignore_dups
+setopt EXTENDED_HISTORY
+
 #alias a=
 alias b='brew'
 alias c='cd'
