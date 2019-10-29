@@ -10,7 +10,7 @@ setopt EXTENDED_HISTORY
 alias b='brew'
 alias c='cd'
 alias d='docker'
-alias e='emacs'
+alias e='emacs -nw'
 alias f='fg'
 alias g='git'
 #alias h=
