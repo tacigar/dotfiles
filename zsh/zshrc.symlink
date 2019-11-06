@@ -75,6 +75,8 @@ PROMPT='%{$fg[green]%}[%n@%m]
 %{${reset_color}%}$ '
 RPROMPT=''
 
+eval "$(rbenv init -)"
+
 [ -s ~/.luaver/luaver ] && . ~/.luaver/luaver
 
 [ -f ~/.zshrc.local ] && . ~/.zshrc.local
