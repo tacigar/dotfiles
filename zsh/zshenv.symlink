@@ -19,3 +19,5 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if [ "$(echo $(uname) | cut -c 1-7)" = 'MSYS_NT' ]; then
   export PATH="/c/Program Files/nodejs:$PATH"
 fi
+
+export MSYS2_PATH_TYPE=inherit
