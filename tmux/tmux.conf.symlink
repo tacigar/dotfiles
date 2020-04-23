@@ -1,7 +1,7 @@
 set -g default-terminal "screen-256color"
 set -g terminal-overrides 'xterm:colors=256'
-set -g window-style 'bg=colour239'
-set -g window-active-style 'bg=colour234'
+set -g window-style 'fg=white,bg=colour239'
+set -g window-active-style 'fg=white,bg=colour234'
 
 set-option -g default-shell /bin/zsh
 set-option -g default-command /bin/zsh
