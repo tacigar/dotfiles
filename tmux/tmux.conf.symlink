@@ -15,3 +15,5 @@ bind % split-window -h -c '#{pane_current_path}'
 # set -g mouse on
 # bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e'"
 # bind -n WheelDownPane select-pane -t= \; send-keys -M
+
+set-option -g mouse on
